@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Settings</title>
+  </head>
+
+  <body>
+    <div class="page d-flex">
+      <!-- Start Sidebar -->
+      <div class="sidebar bg-white p-20 p-relative">
+        <h3 class="title p-relative text-c m-0 hide-mobile w-fit pb-15">
+          Alsaad
+        </h3>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-solid fa-chart-pie fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="settings.html"
+              class="active d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="profile.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="courses.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="friends.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="files.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="plans.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Sidebar -->
+
+      <!-- Start Content -->
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="head p-15 bg-white flex-c-between gap-20">
+          <div class="search p-10 rad-10 d-flex gap-10 align-center">
+            <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            <input
+              class="border-0"
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="user d-flex align-center gap-15">
+            <div class="notification p-relative">
+              <i
+                class="fa-regular fa-bell p-relative"
+                style="font-size: 1.2em"
+              ></i>
+            </div>
+            <img src="images/avatar.png" alt="avatar" style="width: 32px" />
+          </div>
+        </div>
+        <!-- End Head -->
+
+        <h1 class="header special-heading">Settings</h1>
+
+        <!-- Start Settings -->
+        <div
+          class="wrapper grid-450 grid-200-mobile d-grid gap-20 mr-20 ml-20 mb-20"
+        >
+          <!-- Start Site Control -->
+          <div class="control rad-10 bg-white overflow-hide p-20 d-flex-column">
+            <div class="text mb-30 text-c-mobile">
+              <h2 class="m-0">Site Control</h2>
+              <span class="color-grey fw-600 mt-10 d-block"
+                >Control The Website If There Is Maintenance</span
+              >
+            </div>
+            <div
+              class="control-settings d-flex align-center justify-between gap-30 mb-30"
+            >
+              <div class="text">
+                <h4 class="m-0 fw-600">Website Control</h4>
+                <span class="color-grey fs-14 fw-600 mt-10 d-block"
+                  >Open/Close Website And Type The Reason</span
+                >
+              </div>
+              <div>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="toggle"
+                    id="toggle"
+                    class="toggle-checkbox"
+                    checked
+                  />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Close Message Content"
+              class="rad-6 w-full border-ccc p-10"
+            ></textarea>
+          </div>
+          <!-- End Site Control -->
+
+          <!-- Start General Info -->
+          <div class="general-info rad-10 bg-white overflow-hide p-20">
+            <div class="text mb-30 text-c-mobile">
+              <h2 class="m-0">General Info</h2>
+              <span class="color-grey fw-600 mt-10 d-block"
+                >General Information About Your Account
+              </span>
+            </div>
+            <div class="form">
+              <form action="settings.html">
+                <div class="input mb-20">
+                  <label
+                    for="first-name"
+                    class="d-block w-fit mb-10 fw-600 color-grey"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    id="first-name"
+                    class="rad-6 p-10 border-ccc w-full"
+                  />
+                </div>
+                <div class="input mb-20">
+                  <label
+                    for="last-name"
+                    class="d-block w-fit mb-10 fw-600 color-grey"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    id="last-name"
+                    class="rad-6 p-10 border-ccc w-full"
+                  />
+                </div>
+                <div class="input">
+                  <label
+                    for="email"
+                    class="d-block w-fit mb-10 fw-600 color-grey"
+                    >Email</label
+                  >
+                  <div class="email d-flex align-center gap-15">
+                    <input
+                      type="email"
+                      placeholder="anassaadhamad@gmail.com"
+                      id="email"
+                      class="rad-6 p-10 border-ccc w-full"
+                      disabled
+                    />
+                    <a href="settings.html" class="color-blue fw-600">Change</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- End General Info -->
+
+          <!-- Start Security Info -->
+          <div class="security-info rad-10 bg-white overflow-hide p-20">
+            <div class="text mb-30 text-c-mobile">
+              <h2 class="m-0">Security Info</h2>
+              <span class="color-grey fw-600 mt-10 d-block"
+                >Security Information About Your Account</span
+              >
+            </div>
+            <div
+              class="password d-flex align-center justify-between gap-30 pb-20 border-b-eee"
+            >
+              <div class="text">
+                <h4 class="m-0 fw-600">Password</h4>
+                <span class="color-grey fs-14 fw-600 mt-10 d-block"
+                  >Last Change On 25/10/2021</span
+                >
+              </div>
+              <div>
+                <a href="#" class="btn-shape w-fit bg-blue">Change</a>
+              </div>
+            </div>
+            <div
+              class="authentication d-flex align-center justify-between gap-20 mt-10 pb-20 border-b-eee"
+            >
+              <div class="text">
+                <h4 class="m-0 fw-600">Two-Factor Authentication</h4>
+                <span class="color-grey fs-14 fw-600 mt-10 d-block"
+                  >Enable/Disable The Feature
+                </span>
+              </div>
+              <div>
+                <label>
+                  <input
+                    type="checkbox"
+                    name="toggle"
+                    id="toggle"
+                    class="toggle-checkbox"
+                    checked
+                  />
+                  <div class="toggle-switch"></div>
+                </label>
+              </div>
+            </div>
+            <div
+              class="devices d-flex align-center justify-between gap-30 mt-10"
+            >
+              <div class="text">
+                <h4 class="m-0 fw-600">Devices</h4>
+                <span class="color-grey fs-14 fw-600 mt-10 d-block"
+                  >Check The Login Devices List</span
+                >
+              </div>
+              <div>
+                <a href="#" class="btn-shape w-fit">Devices</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Security Info -->
+
+          <!-- Start Social Info -->
+          <div class="social-info rad-10 bg-white overflow-hide p-20">
+            <div class="text mb-30 text-c-mobile">
+              <h2 class="m-0">Social Info</h2>
+              <span class="color-grey fw-600 mt-10 d-block"
+                >Social Media Information</span
+              >
+            </div>
+            <div class="form">
+              <form action="settings.html" class="d-flex-column gap-15">
+                <div class="box rad-6 d-flex align-center overflow-hide">
+                  <i class="fa-brands fa-twitter p-10"></i>
+                  <input
+                    type="text"
+                    class="border-0"
+                    placeholder="Twitter Username"
+                  />
+                </div>
+                <div class="box rad-6 d-flex align-center overflow-hide">
+                  <i class="fa-brands fa-facebook-f p-10"></i>
+                  <input
+                    type="text"
+                    class="border-0"
+                    placeholder="Facebook Username"
+                  />
+                </div>
+                <div class="box rad-6 d-flex align-center overflow-hide">
+                  <i class="fa-brands fa-linkedin-in p-10"></i>
+                  <input
+                    type="text"
+                    class="border-0"
+                    placeholder="Linkedin Username"
+                  />
+                </div>
+                <div class="box rad-6 d-flex align-center overflow-hide">
+                  <i class="fa-brands fa-youtube p-10"></i>
+                  <input
+                    type="text"
+                    class="border-0"
+                    placeholder="Youtube Username"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- End Social Info -->
+
+          <!-- Start Widgets Control -->
+          <div class="widgets-control rad-10 bg-white overflow-hide p-20">
+            <div class="text mb-30 text-c-mobile">
+              <h2 class="m-0">Widgets Control</h2>
+              <span class="color-grey fw-600 mt-10 d-block"
+                >Show/Hide Widgets</span
+              >
+            </div>
+            <div class="boxes d-flex-column gap-15">
+              <div class="box">
+                <input
+                  type="checkbox"
+                  name="widget-control"
+                  class="custom-checkbox"
+                  id="quick-draft"
+                  checked
+                />
+                <label for="quick-draft" class="align-center gap-10 border-0">
+                  <div class="custom-shape"></div>
+                  <span>Quick Draft</span>
+                </label>
+              </div>
+              <div class="box">
+                <input
+                  type="checkbox"
+                  name="widget-control"
+                  class="custom-checkbox"
+                  id="yearly-targets"
+                />
+                <label
+                  for="yearly-targets"
+                  class="align-center gap-10 border-0"
+                >
+                  <div class="custom-shape"></div>
+                  <span>Yearly Targets</span>
+                </label>
+              </div>
+              <div class="box">
+                <input
+                  type="checkbox"
+                  name="widget-control"
+                  class="custom-checkbox"
+                  id="tickets-statistics"
+                  checked
+                />
+                <label
+                  for="tickets-statistics"
+                  class="align-center gap-10 border-0"
+                >
+                  <div class="custom-shape"></div>
+                  <span>Tickets Statistics</span>
+                </label>
+              </div>
+              <div class="box">
+                <input
+                  type="checkbox"
+                  name="widget-control"
+                  class="custom-checkbox"
+                  id="latest-news"
+                  checked
+                />
+                <label for="latest-news" class="align-center gap-10 border-0">
+                  <div class="custom-shape"></div>
+                  <span>Latest News</span>
+                </label>
+              </div>
+              <div class="box">
+                <input
+                  type="checkbox"
+                  name="widget-control"
+                  class="custom-checkbox"
+                  id="latest-tasks"
+                />
+                <label for="latest-tasks" class="align-center gap-10 border-0">
+                  <div class="custom-shape"></div>
+                  <span>Latest Tasks</span>
+                </label>
+              </div>
+              <div class="box">
+                <input
+                  type="checkbox"
+                  name="widget-control"
+                  class="custom-checkbox"
+                  id="top-search-items"
+                />
+                <label
+                  for="top-search-items"
+                  class="align-center gap-10 border-0"
+                >
+                  <div class="custom-shape"></div>
+                  <span>Top Search Items</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- End Widgets Control -->
+
+          <!-- Start Backup Manager -->
+          <div class="backup-manager rad-10 bg-white overflow-hide p-20">
+            <div class="text mb-30 text-c-mobile">
+              <h2 class="m-0">Backup Manager</h2>
+              <span class="color-grey fw-600 mt-10 d-block"
+                >Control Backup Time And Location</span
+              >
+            </div>
+            <div class="boxes d-flex-column gap-15">
+              <div class="box">
+                <input
+                  type="radio"
+                  name="time"
+                  id="daily"
+                  class="custom-radio"
+                />
+                <label for="daily" class="d-flex align-center">
+                  <div class="custom-radio-shape"></div>
+                  <span class="fw-600">Daily</span>
+                </label>
+              </div>
+              <div class="box">
+                <input
+                  type="radio"
+                  name="time"
+                  id="weekly"
+                  class="custom-radio"
+                />
+                <label for="weekly" class="d-flex align-center">
+                  <div class="custom-radio-shape"></div>
+                  <span class="fw-600">Weekly</span>
+                </label>
+              </div>
+              <div class="box">
+                <input
+                  type="radio"
+                  name="time"
+                  id="monthly"
+                  class="custom-radio"
+                  checked
+                />
+                <label for="monthly" class="d-flex align-center">
+                  <div class="custom-radio-shape"></div>
+                  <span class="fw-600">Monthly</span>
+                </label>
+              </div>
+            </div>
+            <div class="boxes-f d-flex flex-column-mobile gap-15">
+              <div class="box">
+                <input
+                  type="radio"
+                  name="location"
+                  id="local"
+                  class="custom-radio"
+                />
+                <label
+                  for="local"
+                  class="d-flex-column justify-center text-c align-center gap-15"
+                >
+                  <i class="fa-solid fa-hdd"></i>
+                  <span>Local</span>
+                </label>
+              </div>
+              <div class="box">
+                <input
+                  type="radio"
+                  name="location"
+                  id="cloud"
+                  class="custom-radio"
+                />
+                <label
+                  for="cloud"
+                  class="d-flex-column justify-center text-c align-center gap-15"
+                >
+                  <i class="fa-solid fa-server"></i>
+                  <span>Cloud</span>
+                </label>
+              </div>
+
+              <div class="box">
+                <input
+                  type="radio"
+                  name="location"
+                  id="mega"
+                  class="custom-radio"
+                />
+                <label
+                  for="mega"
+                  class="d-flex-column justify-center text-c align-center gap-15"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>Mega</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- End Backup Manager -->
+        </div>
+        <!-- End Settings -->
+      </div>
+      <!-- End Content -->
+    </div>
+  </body>
+</html>

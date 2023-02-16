@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/framework.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Profile</title>
+  </head>
+
+  <body>
+    <div class="page d-flex">
+      <!-- Start Sidebar -->
+      <div class="sidebar bg-white p-20 p-relative">
+        <h3 class="title p-relative text-c m-0 hide-mobile w-fit pb-15">
+          Alsaad
+        </h3>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-solid fa-chart-pie fa-fw"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="settings.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="profile.html"
+              class="active d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="courses.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="friends.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="files.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="plans.html"
+              class="d-flex align-center rad-6 color-black fs-14 p-10 trans-0-3 fw-600"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- End Sidebar -->
+
+      <!-- Start Content -->
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="head p-15 bg-white flex-c-between gap-20">
+          <div class="search p-10 rad-10 d-flex gap-10 align-center">
+            <i class="search-icon fa-solid fa-magnifying-glass"></i>
+            <input
+              class="border-0"
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Type A Keyword"
+            />
+          </div>
+          <div class="user d-flex align-center gap-15">
+            <div class="notification p-relative">
+              <i
+                class="fa-regular fa-bell p-relative"
+                style="font-size: 1.2em"
+              ></i>
+            </div>
+            <img src="images/avatar.png" alt="avatar" style="width: 32px" />
+          </div>
+        </div>
+        <!-- End Head -->
+
+        <h1 class="header special-heading">Profile</h1>
+
+        <!-- Start Profile -->
+        <!-- Start Avatar Box -->
+        <div
+          class="avatar-box bg-white rad-10 ml-20 mr-20 mb-20 overflow-hide d-flex align-center"
+        >
+          <div
+            class="avatar d-flex-column align-center justify-center p-20 text-c"
+          >
+            <img src="images/avatar.png" alt="avatar" />
+            <h3 class="mt-15 mb-10">Anas Hamad</h3>
+            <span class="level color-grey mb-15">Level 20</span>
+            <div class="progress-line mb-15"></div>
+            <div class="rating-stars d-flex gap-5">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="number mt-15 fs-14 color-grey">550 Rating</span>
+          </div>
+          <div class="information flex-1">
+            <div class="row p-20 border-b-eee">
+              <h3 class="color-grey fw-600">General Information</h3>
+              <div class="data d-flex align-center flex-wrap r-gap-15">
+                <div class="text">
+                  <span>Full Name:</span>
+                  <span>Anas Hamad</span>
+                </div>
+                <div class="text">
+                  <span>Gender:</span>
+                  <span>Male</span>
+                </div>
+                <div class="text">
+                  <span>Country:</span>
+                  <span>Egypt</span>
+                </div>
+              </div>
+              <label class="mt-20 d-block text-c-tablet text-c-mobile">
+                <input
+                  type="checkbox"
+                  name="toggle"
+                  id="toggle"
+                  class="toggle-checkbox"
+                  checked
+                />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <div class="row p-20 border-b-eee">
+              <h3 class="color-grey fw-600">Personal Information</h3>
+              <div class="data d-flex align-center flex-wrap r-gap-15">
+                <div class="text">
+                  <span>Email:</span>
+                  <span>anassaadhamad@gmail.com</span>
+                </div>
+                <div class="text">
+                  <span>Phone:</span>
+                  <span>01033896493</span>
+                </div>
+                <div class="text">
+                  <span>Date Of Birth:</span>
+                  <span>01/03/1999</span>
+                </div>
+              </div>
+              <label class="mt-20 d-block text-c-tablet text-c-mobile">
+                <input
+                  type="checkbox"
+                  name="toggle"
+                  id="toggle"
+                  class="toggle-checkbox"
+                  checked
+                />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <div class="row p-20 border-b-eee">
+              <h3 class="color-grey fw-600">Job Information</h3>
+              <div class="data d-flex align-center flex-wrap r-gap-15">
+                <div class="text">
+                  <span>Title:</span>
+                  <span>Full Stack Developer</span>
+                </div>
+                <div class="text">
+                  <span>Programming Language:</span>
+                  <span>Python</span>
+                </div>
+                <div class="text">
+                  <span> Years Of Experience:</span>
+                  <span>3</span>
+                </div>
+              </div>
+              <label class="mt-20 d-block text-c-tablet text-c-mobile">
+                <input
+                  type="checkbox"
+                  name="toggle"
+                  id="toggle"
+                  class="toggle-checkbox"
+                />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <div class="row p-20 border-b-eee">
+              <h3 class="color-grey fw-600">Billing Information</h3>
+              <div class="data d-flex align-center flex-wrap r-gap-15">
+                <div class="text">
+                  <span>Payment Method:</span>
+                  <span>Paypal</span>
+                </div>
+                <div class="text">
+                  <span>Email:</span>
+                  <span>alsaad22@gmail.com</span>
+                </div>
+                <div class="text">
+                  <span> Subscription:</span>
+                  <span>Monthly</span>
+                </div>
+              </div>
+              <label class="mt-20 d-block text-c-tablet text-c-mobile">
+                <input
+                  type="checkbox"
+                  name="toggle"
+                  id="toggle"
+                  class="toggle-checkbox"
+                  checked
+                />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- End Avatar Box -->
+
+        <div
+          class="profile-wrapper d-flex flex-wrap align-center mr-20 ml-20 mb-20 gap-20"
+        >
+          <!-- Start My Skills -->
+          <div class="my-skills rad-10 bg-white overflow-hide p-20">
+            <div class="text mb-30 text-c-mobile text-c-tablet">
+              <h2 class="m-0">My Skills</h2>
+              <span class="color-grey fw-600 mt-10 d-block"
+                >Complete Skills List</span
+              >
+            </div>
+            <div class="skills">
+              <div class="row d-flex align-center gap-5 pb-15 border-b-eee">
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">HTML</span>
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">Pugjs</span>
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">HAML</span>
+              </div>
+              <div
+                class="row d-flex align-center gap-5 pb-15 pt-15 border-b-eee"
+              >
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">CSS</span>
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">SASS</span>
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">Stylus</span>
+              </div>
+              <div
+                class="row d-flex align-center gap-5 pb-15 pt-15 border-b-eee"
+              >
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6"
+                  >JavaScript</span
+                >
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6"
+                  >TypeScript</span
+                >
+              </div>
+              <div
+                class="row d-flex align-center gap-5 pb-15 pt-15 border-b-eee"
+              >
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">Vuejs</span>
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">Reactjs</span>
+              </div>
+              <div
+                class="row d-flex align-center gap-5 pb-15 pt-15 border-b-eee"
+              >
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">Jest</span>
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">Jasmine</span>
+              </div>
+              <div
+                class="row d-flex align-center gap-5 pb-15 pt-15 border-b-eee"
+              >
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">PHP</span>
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">Laravel</span>
+              </div>
+              <div class="row d-flex align-center gap-5 pt-15">
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">Python</span>
+                <span class="pt-5 pb-5 pl-10 pr-10 bg-eee rad-6">Django</span>
+              </div>
+            </div>
+          </div>
+          <!-- End Skills -->
+
+          <!-- Start Activities -->
+          <div class="activities rad-10 bg-white overflow-hide p-20">
+            <div class="text mb-30 text-c-mobile text-c-tablet">
+              <h2 class="m-0">Latest Activities</h2>
+              <span class="color-grey fw-600 mt-10 d-block"
+                >Latest Activities Done By The User</span
+              >
+            </div>
+            <div
+              class="row d-flex justify-between align-center border-b-eee pb-20"
+            >
+              <div class="info d-flex align-center gap-10">
+                <img src="images/activity-01.png" alt="activity" />
+                <div class="title">
+                  <h4 class="m-0 fw-600 mb-10">Store</h4>
+                  <span class="color-grey"
+                    >Bought The Mastering Python Course</span
+                  >
+                </div>
+              </div>
+              <div class="time">
+                <span class="clock mb-10 d-block">18:10</span>
+                <div class="day color-grey">Yesterday</div>
+              </div>
+            </div>
+            <div
+              class="row d-flex justify-between align-center border-b-eee pb-20 pt-20"
+            >
+              <div class="info d-flex align-center gap-10">
+                <img src="images/activity-02.png" alt="activity" />
+                <div class="title">
+                  <h4 class="m-0 fw-600 mb-10">Academy</h4>
+                  <span class="color-grey">Got The PHP Certificate</span>
+                </div>
+              </div>
+              <div class="time">
+                <span class="clock mb-10 d-block">16:05</span>
+                <div class="day color-grey">Yesterday</div>
+              </div>
+            </div>
+            <div
+              class="row d-flex justify-between align-center border-b-eee pb-20 pt-20"
+            >
+              <div class="info d-flex align-center gap-10">
+                <img src="images/activity-03.png" alt="activity" />
+                <div class="title">
+                  <h4 class="m-0 fw-600 mb-10">Badges</h4>
+                  <span class="color-grey">Unlocked The 10 Skills Badge</span>
+                </div>
+              </div>
+              <div class="time">
+                <span class="clock mb-10 d-block">18:05</span>
+                <div class="day color-grey">Yesterday</div>
+              </div>
+            </div>
+            <div class="row d-flex justify-between align-center pt-20">
+              <div class="info d-flex align-center gap-10">
+                <img src="images/activity-01.png" alt="activity" />
+                <div class="title">
+                  <h4 class="m-0 fw-600 mb-10">Store</h4>
+                  <span class="color-grey">Bought The Typescript Course</span>
+                </div>
+              </div>
+              <div class="time">
+                <span class="clock mb-10 d-block">12:05</span>
+                <div class="day color-grey">Yesterday</div>
+              </div>
+            </div>
+          </div>
+          <!-- End Activities -->
+        </div>
+        <!-- End Profile -->
+      </div>
+      <!-- End Content -->
+    </div>
+  </body>
+</html>
